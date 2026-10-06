@@ -1,40 +1,31 @@
-# 🏗️ Constructora Web
+# Constructora Web
 
-Sitio web institucional desarrollado para una empresa constructora.
+Sitio web institucional desarrollado para una empresa constructora, con un diseño moderno, profesional y responsive.
 
-El proyecto está pensado como una página moderna, profesional y responsive, orientada a presentar la empresa, sus servicios y proyectos, y facilitar el contacto con potenciales clientes.
+El proyecto presenta los servicios de la empresa, sus membresías de mantenimiento, obras realizadas y diferentes medios de contacto.
 
 ## 🚧 Estado del proyecto
 
 **En desarrollo**
 
-Actualmente se encuentra configurada la estructura inicial del proyecto con Vue 3, Vite y Tailwind CSS.
+La primera versión visual del sitio se encuentra construida. Quedan pendientes algunas funcionalidades y la incorporación de los datos reales de la empresa.
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 
-* **Vue 3** — Framework JavaScript para la interfaz.
-* **Vite** — Herramienta de desarrollo y build.
-* **JavaScript** — Lenguaje principal.
-* **Tailwind CSS** — Framework CSS para el diseño y estilos.
-* **Git** — Control de versiones.
-* **GitHub** — Repositorio del proyecto.
-
-### Tecnologías previstas
-
-Durante el desarrollo se incorporarán otras herramientas según las necesidades del proyecto:
-
-* Vue Router
-* Font Awesome
-* AOS
-* Servicio de envío de formularios
-* WhatsApp
-* Firebase Hosting
+* **Vue 3**
+* **Vite**
+* **JavaScript**
+* **Tailwind CSS**
+* **HTML5**
+* **CSS3**
+* **Git**
+* **GitHub**
 
 ---
 
-## 📁 Estructura inicial del proyecto
+## 📁 Estructura del proyecto
 
 ```text
 constructora-web/
@@ -42,7 +33,15 @@ constructora-web/
 ├── public/
 │
 ├── src/
-│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.vue
+│   │   ├── Hero.vue
+│   │   ├── About.vue
+│   │   ├── Services.vue
+│   │   ├── Works.vue
+│   │   ├── Contact.vue
+│   │   └── Footer.vue
+│   │
 │   ├── App.vue
 │   ├── main.js
 │   └── style.css
@@ -55,17 +54,115 @@ constructora-web/
 └── README.md
 ```
 
-La estructura se irá ampliando a medida que se incorporen nuevos componentes y funcionalidades.
-
 ---
 
-## 💻 Requisitos
+## 🏗️ Secciones del sitio
 
-Para trabajar con el proyecto se necesita tener instalado:
+### Navbar
 
-* Node.js
-* npm
-* Git
+Barra de navegación principal con acceso a:
+
+* Inicio
+* Nosotros
+* Servicios
+* Obras
+* Contacto
+
+Incluye un logo temporal que será reemplazado por el logo definitivo de la empresa.
+
+### Hero
+
+Sección principal de presentación con:
+
+* Imagen de fondo
+* Mensaje principal
+* Descripción de la empresa
+* Acceso a las obras
+* Acceso al contacto
+
+### Nosotros
+
+Presentación institucional de la empresa y sus principales valores:
+
+* Experiencia
+* Calidad
+* Compromiso
+
+También incluye estadísticas que actualmente funcionan como datos de ejemplo y deberán reemplazarse por información real.
+
+### Membresías CONCRETA
+
+Sección destinada a los planes de mantenimiento de la empresa:
+
+#### Básico
+
+* Albañilería
+* Pintura
+* Electricidad
+* Gasista
+* Abono mensual
+
+#### Premium
+
+* Albañilería
+* Pintura
+* Electricidad
+* Gasista
+* Limpieza de canaletas
+* Poda / Mantenimiento de césped
+* Atención 24 hs.
+* Abono mensual
+
+#### Comercial
+
+* Albañilería
+* Pintura
+* Electricidad
+* Gasista
+* Limpieza de canaletas
+* Poda / Mantenimiento de césped
+* Atención 24 hs.
+* Mantenimiento preventivo
+* Abono mensual
+
+Los precios se encuentran actualmente como valores temporales y serán reemplazados por los montos definitivos.
+
+Los botones de consulta utilizan WhatsApp.
+
+### Obras
+
+Galería inicial de proyectos con:
+
+* Imagen
+* Categoría
+* Nombre del proyecto
+* Descripción
+* Acceso para futuras ampliaciones
+
+Las obras actuales utilizan contenido e imágenes provisionales.
+
+### Contacto
+
+Sección de contacto con:
+
+* WhatsApp
+* Teléfono
+* Email
+* Ubicación
+* Formulario de consulta
+
+El formulario se encuentra actualmente diseñado a nivel visual. La conexión con un servicio de envío de emails será incorporada posteriormente.
+
+### Footer
+
+Pie de página con:
+
+* Identidad de la empresa
+* Navegación
+* Datos de contacto
+* Redes sociales
+* WhatsApp
+* Copyright
 
 ---
 
@@ -77,13 +174,13 @@ Clonar el repositorio:
 git clone https://github.com/locodkno78/constructora-web.git
 ```
 
-Ingresar a la carpeta:
+Ingresar al proyecto:
 
 ```bash
 cd constructora-web
 ```
 
-Instalar las dependencias:
+Instalar dependencias:
 
 ```bash
 npm install
@@ -91,7 +188,7 @@ npm install
 
 ---
 
-## ▶️ Ejecutar en desarrollo
+## 💻 Desarrollo
 
 Para iniciar el servidor de desarrollo:
 
@@ -99,15 +196,15 @@ Para iniciar el servidor de desarrollo:
 npm run dev
 ```
 
-Luego abrir en el navegador la dirección indicada por Vite, normalmente:
+Luego abrir la dirección indicada por Vite, normalmente:
 
 ```text
-http://localhost:5173/
+http://localhost:5173
 ```
 
 ---
 
-## 📦 Compilar para producción
+## 📦 Build de producción
 
 Para generar la versión de producción:
 
@@ -121,11 +218,7 @@ Los archivos generados estarán disponibles en:
 dist/
 ```
 
----
-
-## 🔎 Vista previa de producción
-
-Después de realizar el build:
+Para comprobar localmente la versión de producción:
 
 ```bash
 npm run preview
@@ -133,91 +226,61 @@ npm run preview
 
 ---
 
-## 🎯 Secciones previstas
-
-La página institucional contará con las siguientes secciones:
-
-* Inicio
-* Nosotros
-* Servicios
-* Proyectos
-* Galería
-* Contacto
-* Redes sociales
-* WhatsApp
-
-También se incorporará un formulario para que los visitantes puedan realizar consultas.
-
----
-
 ## 📱 Diseño responsive
 
-El sitio será desarrollado con un enfoque **responsive**, adaptándose a:
+El sitio está desarrollado con un enfoque responsive para adaptarse a:
 
-* Computadoras
-* Notebooks
-* Tablets
-* Teléfonos móviles
+* 📱 Teléfonos
+* 📲 Tablets
+* 💻 Notebooks
+* 🖥️ Monitores de escritorio
 
----
-
-## 📬 Formulario de consultas
-
-Se incorporará un formulario de contacto para que los potenciales clientes puedan enviar consultas relacionadas con sus proyectos.
-
-La solución definitiva para el envío de formularios se definirá durante el desarrollo.
+Tailwind CSS permite controlar los distintos tamaños de pantalla mediante sus clases responsive.
 
 ---
 
-## 🌐 Deploy
+## 🔗 Integraciones previstas
 
-La publicación del sitio se realizará una vez finalizada la primera versión estable.
+Durante las próximas etapas se prevé incorporar:
 
-La plataforma de hosting prevista es:
-
-**Firebase Hosting**
-
----
-
-## 🔄 Control de versiones
-
-El proyecto utiliza Git para controlar los cambios.
-
-Flujo básico:
-
-```bash
-git status
-
-git add .
-
-git commit -m "Descripción del cambio"
-
-git push
-```
+* [ ] Logo definitivo
+* [ ] Datos reales de la empresa
+* [ ] Precios definitivos de las membresías
+* [ ] Obras reales y fotografías propias
+* [ ] Menú móvil funcional
+* [ ] Formulario de contacto funcional
+* [ ] Integración con EmailJS o Formspree
+* [ ] Enlaces reales de redes sociales
+* [ ] Número real de WhatsApp
+* [ ] Animaciones y mejoras visuales
+* [ ] Detalle individual de cada obra
+* [ ] Optimización SEO
+* [ ] Deploy definitivo
 
 ---
 
-## 📌 Reglas importantes
+## 🔐 Seguridad
 
-No subir al repositorio información sensible como:
+El proyecto es principalmente institucional y no requiere actualmente una base de datos ni autenticación de usuarios.
 
-* Contraseñas
-* Tokens
-* API Keys privadas
-* Credenciales
-* Archivos `.env` con información sensible
+Las futuras integraciones deberán evitar exponer claves privadas o información sensible en el código del frontend.
 
-La información sensible deberá mantenerse fuera del repositorio mediante variables de entorno y `.gitignore`.
+---
+
+## 🌐 Repositorio
+
+Repositorio oficial:
+
+**GitHub:**
+https://github.com/locodkno78/constructora-web
 
 ---
 
 ## 👨‍💻 Autor
 
-**locodkno78**
+**Di Colantonio Santiago**
 
-GitHub:
-
-https://github.com/locodkno78
+Desarrollo web con Vue.js, JavaScript, HTML, CSS y tecnologías modernas de frontend.
 
 ---
 
@@ -225,5 +288,6 @@ https://github.com/locodkno78
 
 Proyecto desarrollado para uso institucional de la empresa constructora.
 
-La licencia y las condiciones de uso podrán definirse posteriormente según las necesidades del proyecto.
+Todos los derechos reservados.
+
 
