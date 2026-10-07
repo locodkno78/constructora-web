@@ -4,16 +4,12 @@
       class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8"
     >
       <!-- Logo -->
-      <a href="#inicio" class="flex items-center gap-3">
-        <div
-          class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-900 text-lg font-bold text-white"
-        >
-          C
-        </div>
-
-        <span class="text-xl font-bold tracking-wide text-gray-900">
-          CONSTRUCTORA
-        </span>
+      <a href="#inicio" class="flex items-center">
+        <img
+          src="/images/logo-concreta-navbar.jpeg"
+          alt="CONCRETA - Soluciones Integrales"
+          class="h-16 w-auto object-contain"
+        />
       </a>
 
       <!-- Menú desktop -->

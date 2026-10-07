@@ -4,20 +4,22 @@
     <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
       <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <!-- Marca -->
-        <div class="lg:col-span-2">
-          <a href="#inicio" class="inline-flex items-center gap-3">
-            <div
-              class="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-lg font-bold text-gray-950"
-            >
-              C
-            </div>
-
-            <span class="text-xl font-bold tracking-wide"> CONSTRUCTORA </span>
+        <div class="lg:col-span-2 ">
+          <a
+            href="#inicio"
+            class="inline-flex items-center rounded-xl bg-white p-3"
+          >
+            <img
+              src="/images/logo-concreta-navbar.jpeg"
+              alt="CONCRETA - Soluciones Integrales"
+              class="h-16 w-110 object-contain"
+            />
           </a>
 
-          <p class="mt-6 max-w-md text-sm leading-7 text-gray-400">
-            Construimos proyectos con compromiso, experiencia y atención en cada
-            detalle. Soluciones pensadas para durar.
+          <p class="mt-6 max-w-md text-sm leading-7 text-gray-400 text-center">
+            Soluciones integrales para construcción, mantenimiento y cuidado de
+            propiedades. Trabajamos con compromiso, experiencia y atención en
+            cada detalle.
           </p>
 
           <!-- Redes -->
