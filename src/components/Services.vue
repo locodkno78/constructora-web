@@ -243,7 +243,7 @@
 </template>
 
 <script setup>
-const whatsappNumber = "5493810000000";
+const whatsappNumber = "5493813027176";
 
 const whatsappMessage = encodeURIComponent(
   "Hola, quiero consultar por las Membresías CONCRETA. Me gustaría recibir asesoramiento para elegir la membresía adecuada.",

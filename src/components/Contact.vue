@@ -67,7 +67,7 @@
                 <p class="text-sm text-gray-400">WhatsApp</p>
 
                 <a
-                  :href="whatsappLink"
+                  href="https://wa.me/5493813027176?text=Hola,%20quiero%20realizar%20una%20consulta%20sobre%20CONCRETA."
                   target="_blank"
                   rel="noopener noreferrer"
                   class="mt-1 block font-medium transition hover:text-gray-300"
@@ -101,7 +101,7 @@
               <div>
                 <p class="text-sm text-gray-400">Teléfono</p>
 
-                <p class="mt-1 font-medium">+54 381 XXX XXXX</p>
+                <p class="mt-1 font-medium">+54 381 302 7176</p>
               </div>
             </div>
 
@@ -165,7 +165,7 @@
 
           <!-- WhatsApp -->
           <a
-            :href="whatsappLink"
+            href="https://wa.me/5493813027176?text=Hola,%20quiero%20realizar%20una%20consulta%20sobre%20CONCRETA."
             target="_blank"
             rel="noopener noreferrer"
             class="mt-10 inline-flex w-full items-center justify-center rounded-lg bg-white px-6 py-3.5 text-sm font-bold text-gray-900 transition hover:bg-gray-200"
@@ -268,7 +268,7 @@
 </template>
 
 <script setup>
-const whatsappNumber = "5493810000000";
+const whatsappNumber = "5493813027176";
 
 const whatsappMessage = encodeURIComponent(
   "Hola, quiero realizar una consulta sobre los servicios de CONCRETA.",

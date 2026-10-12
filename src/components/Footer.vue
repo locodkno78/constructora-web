@@ -26,7 +26,7 @@
           <div class="mt-7 flex gap-3">
             <!-- Instagram -->
             <a
-              href="#"
+              href="https://www.instagram.com/concretatucuman/"
               aria-label="Instagram"
               class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 transition hover:bg-white hover:text-gray-950"
             >
@@ -70,10 +70,10 @@
 
             <!-- WhatsApp -->
             <a
-              :href="whatsappLink"
+              href="https://wa.me/5493813027176?text=Hola,%20quiero%20realizar%20una%20consulta%20sobre%20CONCRETA."
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="WhatsApp"
+              aria-label="Contactar porWhatsApp"
               class="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10 transition hover:bg-white hover:text-gray-950"
             >
               <svg
@@ -157,13 +157,13 @@
           <ul class="mt-6 space-y-4 text-sm text-gray-400">
             <li>San Miguel de Tucumán, Tucumán</li>
 
-            <li>+54 381 XXX XXXX</li>
+            <li>+54 381 302 7176</li>
 
             <li>contacto@constructora.com</li>
           </ul>
 
           <a
-            :href="whatsappLink"
+            href="https://wa.me/5493813027176?text=Hola,%20quiero%20realizar%20una%20consulta%20sobre%20CONCRETA."
             target="_blank"
             rel="noopener noreferrer"
             class="mt-7 inline-flex rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-gray-950 transition hover:bg-gray-200"
@@ -189,7 +189,7 @@
 </template>
 
 <script setup>
-const whatsappNumber = "5493810000000";
+const whatsappNumber = "5493813027176";
 
 const whatsappMessage = encodeURIComponent(
   "Hola, quiero realizar una consulta sobre CONCRETA.",

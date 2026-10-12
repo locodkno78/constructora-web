@@ -6,6 +6,7 @@ import Services from "./components/Services.vue";
 import Works from "./components/Works.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "./components/Footer.vue";
+import WhatsAppFloat from "./components/WhatsAppFloat.vue";
 </script>
 
 <template>
@@ -23,5 +24,7 @@ import Footer from "./components/Footer.vue";
     <Contact />
 
     <Footer />
+
+    <WhatsAppFloat />
   </main>
 </template>
